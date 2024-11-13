@@ -30,7 +30,8 @@ def call():
             amount = st.number_input("Transaction Amount", min_value=0)
 
         # Prepare data for model prediction
-        data = [card_number, amount, is_declined, h_dec, is_foreign]
+        data = [int(card_number), int(amount), int(is_declined),int( h_dec), int(is_foreign)]
+
 
         # Button for fraud check
         st.markdown("<hr>", unsafe_allow_html=True)  # Horizontal line for separation
