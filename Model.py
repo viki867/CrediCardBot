@@ -5,7 +5,7 @@ import numpy as np
 class Model:
 
     def __init__(self):
-        with open('Models/model.pkl', 'rb') as f:
+        with open('Models/new_model.pkl', 'rb') as f:
             self.model = pickle.load(f)
     
 
